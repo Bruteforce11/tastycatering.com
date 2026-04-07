@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tasty Catering</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tasty Catering</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <h1>Tasty Catering</h1>
+<header class="navbar">
+    <h1 class="logo">Tasty Catering</h1>
     <nav>
+        <a href="#home">Home</a>
         <a href="#services">Services</a>
         <a href="#menu">Menu</a>
         <a href="#order">Order</a>
     </nav>
 </header>
 
-<section class="hero">
-    <h2>Elite Catering Experience</h2>
-    <p>We don’t just cook. We deliver unforgettable moments.</p>
-    <a href="#order" class="btn">Order Now</a>
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h2>Luxury Catering Experience</h2>
+        <p>Premium food. Professional service. Zero compromise.</p>
+        <a href="#order" class="btn">Order Now</a>
+    </div>
 </section>
 
 <section id="services">
@@ -42,26 +46,22 @@
 </section>
 
 <section id="order">
-    <h2>Place Your Order</h2>
+    <h2>Place an Order</h2>
 
-    <!-- EMAIL FORM -->
     <form action="https://formsubmit.co/breitmakwati06@gmail.com" method="POST">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="tel" name="phone" placeholder="Phone Number" required>
-        <textarea name="order" placeholder="What would you like to order?" required></textarea>
-
-        <button type="submit">Send Order</button>
+        <textarea name="order" placeholder="Your Order Details" required></textarea>
+        <button type="submit">Submit Order</button>
     </form>
 
-    <!-- WHATSAPP BUTTON -->
-    <a class="whatsapp" href="https://wa.me/+263772854507" target="_blank">
-        Order via WhatsApp
-    </a>
 </section>
 
 <footer>
     <p>© 2026 Tasty Catering</p>
 </footer>
 
+<script src="script.js"></script>
+
 </body>
-</html><script src="script.js"></script>
+</html>
